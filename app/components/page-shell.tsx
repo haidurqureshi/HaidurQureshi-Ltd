@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 // Change these once and every page updates.
-export const CONTACT_EMAIL = "Enquires@haidurqureshi.com";
+export const CONTACT_EMAIL = "enquiries@haidurqureshi.com"; // general enquiries
+export const PRIVACY_EMAIL = "privacy@haidurqureshi.com"; // data protection requests
 export const COMPANY_NUMBER = "16936643";
 export const SITE_URL = "https://haidurqureshi.com"; // change if your main domain differs
 
@@ -93,6 +94,10 @@ export function A({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
-export function EmailLink() {
-  return <a href={`mailto:${CONTACT_EMAIL}`} className={inlineLink}>{CONTACT_EMAIL}</a>;
+export function EmailLink({ address = CONTACT_EMAIL }: { address?: string }) {
+  return (
+    <a href={`mailto:${address}`} className={inlineLink}>
+      {address}
+    </a>
+  );
 }
