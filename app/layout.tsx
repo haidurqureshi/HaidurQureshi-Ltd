@@ -13,9 +13,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://haidurqureshi.com"; // change if your main domain differs
+
 export const metadata: Metadata = {
-  title: "HaidurQureshi Ltd",
-  description: "Software development",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "HaidurQureshi Ltd | Custom Software, Websites and Mobile Apps",
+    template: "%s | HaidurQureshi Ltd", // sub-pages: "About Us | HaidurQureshi Ltd"
+  },
+  description:
+    "HaidurQureshi Ltd is a UK software company building custom websites, mobile apps and software systems that are functional, user-friendly and visually polished.",
+  applicationName: "HaidurQureshi Ltd",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "HaidurQureshi Ltd",
+    locale: "en_GB",
+    url: "/",
+    title: "HaidurQureshi Ltd | Custom Software, Websites and Mobile Apps",
+    description:
+      "Custom websites, mobile apps and software systems, built to be functional and a pleasure to use.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HaidurQureshi Ltd | Custom Software, Websites and Mobile Apps",
+    description:
+      "Custom websites, mobile apps and software systems, built to be functional and a pleasure to use.",
+  },
+  robots: { index: true, follow: true },
 };
 
 const footerLinks = [
