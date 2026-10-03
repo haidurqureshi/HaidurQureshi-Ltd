@@ -24,12 +24,10 @@ export const metadata: Metadata = {
   description:
     "HaidurQureshi Ltd is a UK software company building custom websites, mobile apps and software systems that are functional, user-friendly and visually polished.",
   applicationName: "HaidurQureshi Ltd",
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "HaidurQureshi Ltd",
     locale: "en_GB",
-    url: "/",
     title: "HaidurQureshi Ltd | Custom Software, Websites and Mobile Apps",
     description:
       "Custom websites, mobile apps and software systems, built to be functional and a pleasure to use.",
