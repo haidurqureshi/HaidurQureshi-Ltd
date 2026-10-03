@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { A, COMPANY_NUMBER, EmailLink, List, PageShell, Section } from "../components/page-shell";
+import { A, COMPANY_NUMBER, EmailLink, List, PageShell, PRIVACY_EMAIL, Section } from "../components/page-shell";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
           HaidurQureshi Ltd is a company registered in England and Wales
           (company number {COMPANY_NUMBER}). We are the controller of the
           personal data described in this notice. You can contact us about it
-          at <EmailLink />.
+          at <EmailLink address={PRIVACY_EMAIL} />.
         </p>
         <p>
           We also operate Ekonos (ekonos.co.uk), a separate budgeting service.
@@ -152,7 +152,7 @@ export default function PrivacyPolicy() {
           <li><strong>Portability:</strong> ask us to provide your data in a portable format where it applies.</li>
         </List>
         <p>
-          To use any of these rights, email <EmailLink />. We will respond
+          To use any of these rights, email <EmailLink address={PRIVACY_EMAIL} />. We will respond
           within one month.
         </p>
       </Section>
