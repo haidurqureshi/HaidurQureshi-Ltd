@@ -12,7 +12,7 @@ const jsonLd = {
   name: "HaidurQureshi Ltd",
   legalName: "HaidurQureshi Ltd",
   url: "https://haidurqureshi.com", // change if your main domain differs
-  email: "Enquires@haidurqureshi.com",
+  email: "enquiries@haidurqureshi.com",
   description:
     "Custom websites, mobile apps and software systems for businesses.",
   identifier: "16936643", // Companies House number
@@ -34,7 +34,7 @@ export default function Home() {
           HaidurQureshi Ltd
         </span>
         <a
-          href="mailto:Enquires@haidurqureshi.com"
+          href="mailto:enquiries@haidurqureshi.com"
           className="rounded-full text-sm font-medium text-zinc-600 underline-offset-4 transition-colors hover:text-zinc-900 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:text-zinc-400 dark:hover:text-zinc-50"
         >
           Email us
@@ -58,7 +58,7 @@ export default function Home() {
 
         <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row">
           <a
-            href="mailto:Enquires@haidurqureshi.com"
+            href="mailto:enquiries@haidurqureshi.com"
             className="inline-flex h-12 items-center justify-center rounded-full bg-zinc-900 px-7 text-base font-medium text-white transition-colors hover:bg-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:min-w-40 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-300"
           >
             Contact us
