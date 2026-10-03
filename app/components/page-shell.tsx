@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 // Change these once and every page updates.
 export const CONTACT_EMAIL = "Enquires@haidurqureshi.com";
 export const COMPANY_NUMBER = "16936643";
+export const SITE_URL = "https://haidurqureshi.com"; // change if your main domain differs
 
 const inlineLink =
   "font-medium text-blue-700 underline underline-offset-4 transition-colors hover:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 dark:text-blue-400 dark:hover:text-blue-300";
