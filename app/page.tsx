@@ -13,9 +13,28 @@ const services = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "HaidurQureshi Ltd",
+  legalName: "HaidurQureshi Ltd",
+  url: "https://haidurqureshi.com", // change if your main domain differs
+  email: "Enquires@haidurqureshi.com",
+  description:
+    "Custom websites, mobile apps and software systems for businesses.",
+  identifier: "16936643", // Companies House number
+  knowsAbout: ["Custom website development", "Mobile app development", "Software development"],
+};
+
 export default function Home() {
   return (
-    <div className="flex min-h-dvh flex-col bg-stone-50 font-sans text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
+    <div className="flex flex-1 flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       {/* Top bar */}
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-5 py-6 sm:px-8 lg:px-12">
         <span className="text-base font-semibold tracking-tight sm:text-lg">
@@ -73,11 +92,6 @@ export default function Home() {
           ))}
         </ul>
       </main>
-
-      {/* Footer <footer className="mx-auto w-full max-w-5xl px-5 py-6 text-sm text-zinc-500 sm:px-8 lg:px-12 dark:text-zinc-500">
-        © {new Date().getFullYear()} HaidurQureshi Ltd
-      </footer> */}
-      
     </div>
   );
 }
